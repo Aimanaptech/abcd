@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Waheedi Badam</title>
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="..\eproject\bootstrap-5.0.2-dist\css\bootstrap.min.css"/>
+     <!-- Jquery link -->
+     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+   <!-- aim styling -->
+   <link rel="stylesheet" href="..\eproject\styling\styling_a.css">
+<script src="..\eproject\calculation\calculation_a.js"></script>
+ 
+    <!-- saf Styling -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="..\eproject\styling\home_page_styling.css" type="text/css" />
+ <script src="..\eproject\calculation\calculation_s.js"></script>
+   
+    <style>
+        h1,h5,span{
+            color: brown;
+        }
+     </style>
+</head>
+<body >
+    <div class="container_fluid">
+<!-- <div class="container-fluid"> -->
+    <!-- header start -->
+  <div class="container-fluid">
+ 
+  <div class="row">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!-- including tag start -->
+        <div><img src="..\eproject\images\fruit_basket-removebg-preview.png" alt="" width="60px"></div>
+        <!-- including tag end -->
+        <a class="navbar-brand" href="index.html"><span class="shopname_1 shopname_size"><strong>Maru</strong></span><span
+            class="shopname_2 shopname_size">Dry</span><span class="shopname_3 shopname_size">Fruits</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse right_alignment" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+              <img src="..\eproject\images\whatsapp_1-removebg-preview.png" alt="" width="40px"><label>+92
+                36-0222234</label>
+            </li>
+            <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+          </ul>
+
+          <form class="d-flex me-2"> 
+            <input class="form-control rounded-pill" type="search" aria-label="Search">
+            <button class="btn btn-outline-info header_button rounded-pill" type="submit">Search</button>
+          </form>
+          <!-- <form class="d-flex"> -->
+
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button class="btn btn-outline-info" type="submit">Sign up</button> -->
+          <!-- <button class="btn btn-outline-info" type="submit">login</button> -->
+
+         
+            <!-- </form> -->
+            <!-- Login form and modal starting -->
+            <!-- <form class="d-flex"> -->
+
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <!-- <button class="btn btn-outline-info" type="submit">Sign up</button> -->
+            <!-- <button class="btn btn-outline-info" type="submit">login</button> -->
+            <div class="">
+              <div class="container">
+                <button type="button" class="btn header_button rounded-pill" data-bs-toggle="modal"
+                  data-bs-target="#myModal_login">Login
+
+                </button>
+              </div>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal_login">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Login</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <!-- <form> -->
+                      <div class="mb-3">
+                        <label for="InputEmail2" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email_2" aria-describedby="emailHelp" required><label
+                        style="color: red;"  id="err_email_2"></label>
+                      </div>
+                      <div class="mb-3">
+                        <label for="InputPassword2" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="pass_2" required><label style="color: red;"
+                          id="err_pass_2"></label>
+                      </div>
+                      <!-- <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div> -->
+                      <div>
+                        <center>OR</center>
+                      </div>
+                      <div>
+                        <center><a href="sign_up.html">Create an account</a></center>
+                      </div>
+                      <button type="submit" class="btn btn-primary" id="regex_login">Login</button>
+                      <!-- </form> -->
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- </form> -->
+              <!-- login form and modal ended -->
+            </div>
+        
+        </div>
+    </nav>
+
+  </div>
+</div>
+  <!-- header end -->
+  <!-- The navigation menu started -->
+  <div class="container-fluid  sticky-top">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light nav_bg sticky-top">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent_2" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation" style="background-color: burlywood">
+          <span class="navbar-toggler-icon w3teal shopname_2"  style="background-color: burlywood"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent_2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><span class="glyphicon glyphicon-home"></span>
+              <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="contact_us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="about_us.html">About Us</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="#">Disclaimer</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-light" href="discount_page.html">Discount</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="types_of_gift_box.html">Gift box</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown_2" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Nutritional Info
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="almond_blog.html">Almonds (Badam)</a></li>
+                    
+                <li><a class="dropdown-item" href="cashews_blog.html">Cashews (Kaju)</a></li>
+                <li><a class="dropdown-item" href="pistachio_blog.html">Pistachio</a></li>
+                <li><a class="dropdown-item" href="hazelnut_blog.html">Hazelnut</a></li>
+                <li><a class="dropdown-item" href="pinenut_blog.html">Pinenut</a></li>
+                <li><a class="dropdown-item" href="peanut_blog.html">Peanut</a></li>
+                <li><a class="dropdown-item" href="walnut_blog.html">Walnut</a></li>
+                <li><a class="dropdown-item" href="dates_blog.html">Dates (khajoor)</a></li>
+                <li><a class="dropdown-item" href="fig_blog.html">Fig (Injeer)</a></li>
+                <li><a class="dropdown-item" href="dried_kiwi_blog.html">Dried Kiwi</a></li>
+                <li><a class="dropdown-item" href="dried_apricot_blog.html">Dried Apricot</a></li>
+                <li><a class="dropdown-item" href="dried_blueberry_blog.html">Dried Blueberry</a></li>
+                <li><a class="dropdown-item" href="dried_cranberry_blog.html">Dried Cranberry</a></li>
+                   <li><a class="dropdown-item" href="dried_pineapple_blog.html">Dried Pineapple</a></li>
+               
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown_2" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Dry Fruits
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="types_of_almond.html">Almonds</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="types_of_cashews.html">Cashews</a></li>
+                <li><a class="dropdown-item" href="types_of_dates.html">Dates</a></li>
+                <li><a class="dropdown-item" href="types_of_dried_fruits.html">Dried Fruits(berries)</a></li>
+                <li><a class="dropdown-item" href="types_of_peanuts.html">Peanuts</a></li>
+                <li><a class="dropdown-item" href="types_of_pistachio.html">Pistachio</a></li>
+                <li><a class="dropdown-item" href="types_of_raisin.html">Raisin</a></li>
+                <li><a class="dropdown-item" href="types_of_walnut.html">Walnuts</a></li>
+                <li><a class="dropdown-item" href="pinenut_hazelnut.html">Pinenut and Hazelnut</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown_2" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dates
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="ajwa_dates.html">Ajwa dates</a></li>
+                <li><a class="dropdown-item" href="irani_dates.html">Irani dates</a></li>
+                <li><a class="dropdown-item" href="kalmi_dates.html">Kalmi dates</a></li>
+           
+                <li><a class="dropdown-item" href="mabroom_dates.html">Mabroom dates</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" d="navbarDropdown_2" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Dried fruits
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="kiwi.html">kiwi</a></li>
+                <li><a class="dropdown-item" href="pineapple.html">Pineapple</a></li>
+                <li><a class="dropdown-item" href="anjeer.html">Anjeer</a></li>
+                <li><a class="dropdown-item" href="apriot.html">Apricot</a></li>
+                <li><a class="dropdown-item" href="black_raisin.html">Black Raisin</a></li>
+                <li><a class="dropdown-item" href="dried_cranberry.html">Dried Cranberry</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><img src="..\eproject\images\cart_2-removebg-preview.png" alt="" width="30px"></a>
+            </li> -->
+          </ul>
+
+
+          <!-- <form class="d-flex"> -->
+            <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+           <form class="d-flex">
+             <div> <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true"><img src="..\eproject\images\cart_2-removebg-preview.png" alt="" width="30px"></a></div> 
+        
+          </form>
+        
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+  <!-- The navivagation menu ended-->
+<!-- </div> -->
+
+        
+<!-- start of section -->
+<div class="container-fluid body_bg">
+        <div class="container pb-5 ">
+            <!-- first row start -->
+            <div class="row">
+            <div class="col_lg_5 col-md-6 col_sm_6 col_6 m-auto mt-5">
+                <div class="card1">
+                    <img src="..\eproject\images\abdul_wahidi_sing.png" class="img-fluid img_1"  alt="Abdul Waheedi Badam">
+                </div>
+            </div>
+            <div class="col_lg_6 col-md-6 col_sm_7 col_7  m-auto mt-5">
+                <h1 class="writing_a">Abdul Waheedi Badam (Almond)</h1>
+                <h5>(Without shell)<span class="badge bg-danger">-20%</span></h5>
+                <select class="text-center mt-2 h_w_btn2" name="quantity" id="quant_5">
+                    <option>Choose an option</option>
+                    <option>250g</option>
+                    <option>500g</option>
+                    <option>1000g</option>
+                </select>
+                <span id="ans_tot_5a" class="ms-2" style="font-size: 30px;">Rs.0.00</span><span id="ans_tot_5" class="ms-2" style="font-size: 30px;"><s>Rs.0.00</s></span>
+                <div class=" mt-3">
+                    <!-- <input class="text-center h_w_btn  mt-3" type="number" name="number" /> -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn_in_color btn-sm" id="minus-btn"><strong>-</strong></button>
+                        </div>
+                        <input type="number" id="qty_input" class="input_1 border-0" value="1" min="1">
+                        <div class="input-group-prepend">
+                            <button class="btn btn_in_color btn-sm" id="plus-btn"><strong>+</strong></button>
+                        </div>
+                <!-- <button class="btn btn-outline-success ms-2  h_w_btn1">Add To Cart</button> -->
+                <a href="cart.html"><button class="btn1 success ms-2">Add To Cart</button></a>
+            </div>
+            <div  class="mt-3 height_a mb-5"><h5>Qualities of Abdul Waheedi Badam</h5>
+               <ul >
+                <li> These almonds are rich in magnesium, loaded with antioxidants and a great source of Fiber, Protein and Vitamin E.</li>
+                <li>Almonds are known to aid calorie reduction and help in lowering cholesterol levels, blood sugar levels and blood pressure. </li></ul>
+                </div>
+            </div>
+        </div>
+            <!-- first row end -->
+        </div>
+
+      </div>
+      </div>
+   <!-- end of section -->
+   <!-- start footer -->
+<div  class="container-fluid ">
+  <div class="row pt-4 pb-4" style="background-color:  rgb(94,8,31);">
+  <div style="color: white;" class="col-lg-3 col-md-4 col-sm-6 col-8 m-auto">Copyright©:MaruDryFruits2023</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-8 m-auto"><a style="color: white
+  ;text-decoration: none;" href="sitemap.html">Sitemap</a></div>
+</div>
+</div>
+<!-- end footer -->
+    
+</div>
+    <script src="..\eproject\bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>
